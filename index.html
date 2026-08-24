@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC Tag Text Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 NFC Tag Text Upload</h1>
+            <p>Upload text files and link them to your NFC tags</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>Upload a Text File</h2>
+                <div class="upload-area" id="uploadArea">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <h3>Drag and drop your text file here</h3>
+                    <p>or click to select</p>
+                    <input type="file" id="fileInput" accept=".txt" hidden>
+                </div>
+
+                <div class="form-group">
+                    <label for="nfcTag">NFC Tag ID/Name:</label>
+                    <input type="text" id="nfcTag" placeholder="e.g., NFT-001, MyNFT, etc." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description (optional):</label>
+                    <textarea id="description" placeholder="Add a description for this upload..."></textarea>
+                </div>
+
+                <button id="uploadBtn" class="btn btn-primary">Upload & Link</button>
+                <div id="uploadStatus" class="status-message"></div>
+            </section>
+
+            <section class="files-section">
+                <h2>Your Linked Files</h2>
+                <div id="filesList" class="files-list">
+                    <p class="empty-state">No files uploaded yet. Start by uploading your first file!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 NFC Tag Text Upload | Built with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
