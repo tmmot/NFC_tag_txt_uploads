@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 A Message for You</title>
+    <link rel="stylesheet" href="love-letter.css">
+</head>
+<body>
+    <div class="background"></div>
+    <audio id="bgMusic" loop>
+        <source src="https://assets.mixkit.co/active_storage/sfx/2444/2444-preview.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div class="scene">
+            <!-- Poodle Animation -->
+            <div class="poodle-container">
+                <svg class="poodle" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Head -->
+                    <circle cx="100" cy="80" r="35" fill="#E8D5C4"/>
+                    <!-- Top pom -->
+                    <circle cx="100" cy="35" r="30" fill="#E8D5C4"/>
+                    <!-- Ears -->
+                    <circle cx="70" cy="50" r="20" fill="#E8D5C4"/>
+                    <circle cx="130" cy="50" r="20" fill="#E8D5C4"/>
+                    <!-- Eyes -->
+                    <circle cx="90" cy="75" r="5" fill="#333"/>
+                    <circle cx="110" cy="75" r="5" fill="#333"/>
+                    <!-- Nose -->
+                    <circle cx="100" cy="88" r="4" fill="#333"/>
+                    <!-- Mouth -->
+                    <path d="M 100 88 Q 95 95 90 92" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M 100 88 Q 105 95 110 92" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <!-- Body -->
+                    <ellipse cx="100" cy="140" rx="28" ry="35" fill="#E8D5C4"/>
+                    <!-- Front pom -->
+                    <circle cx="100" cy="155" r="25" fill="#E8D5C4"/>
+                    <!-- Front legs -->
+                    <rect x="85" y="170" width="8" height="35" rx="4" fill="#E8D5C4"/>
+                    <rect x="107" y="170" width="8" height="35" rx="4" fill="#E8D5C4"/>
+                    <!-- Back legs (partial) -->
+                    <rect x="75" y="165" width="8" height="30" rx="4" fill="#D4C4B0"/>
+                    <rect x="117" y="165" width="8" height="30" rx="4" fill="#D4C4B0"/>
+                    <!-- Tail -->
+                    <path d="M 120 130 Q 145 120 150 95" stroke="#E8D5C4" stroke-width="20" fill="none" stroke-linecap="round"/>
+                </svg>
+                
+                <!-- Letter -->
+                <div class="letter" id="letter">
+                    <div class="letter-front">
+                        <div class="heart">💌</div>
+                        <p>Click me!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Display -->
+            <div class="message-display" id="messageDisplay">
+                <div class="message-content">
+                    <div class="message-header">
+                        <h1>💕 A Message for You 💕</h1>
+                        <p class="from">From Tom</p>
+                    </div>
+
+                    <div class="message-text">
+                        <p>Dear Momo,</p>
+
+                        <p>This is just a small reminder of how loved you are. I for example love you so much!</p>
+
+                        <p>And I have seen over the past almost 2 years how your friends, your family, every one around you and close to you loves and appreciates you Momo.</p>
+
+                        <p>Even people you met the first time told me later what a wonderful human being you are, you are truly beautiful Momo ❤️</p>
+
+                        <p>You probably think now, hm 🤨 what about me sleeping so much all the time or forgetting the time and beeing late so much or beeing so clumsy 😟🤨</p>
+
+                        <p><strong>BUT!</strong></p>
+
+                        <p>You should know that that's totally normal and okay and it is part of you, these character traits make you yourself, they make you complete. I think they make you relatable, tangible, human.</p>
+
+                        <p>I love the way you are with all your aspects Momo, you are kind and giving, you are funny and sceptical sometimes, I love when we both complain about some film scene being unrealistic or when we doubt something together at the same Moment.</p>
+
+                        <p>I love when we get late night snacks or we ignore something we wanted to do and get drinks instead, I love when we both have a moment of sadness and cry together because we are confused or worried. I love when one of us does something stupid or funny and the other one is just there to laugh at it.</p>
+
+                        <p>I feel a deep connection to you, not because we are perfect together but because we are us. We are human, we see our own self perceived shortcomings in a mistake we do and we laugh and related about it. And that is exactly how other see you too. They don't think you are awful for every small mistake. They love you, they accept you and they are there for you. And those who judge you by your mistakes are probably unhappy themselves and they don't know you well enough.</p>
+
+                        <p>I know this message is just that, a message- words. But I hope you understand that you are beautiful and I don't mean just pretty, you are a beautiful human being. I love you</p>
+
+                        <p class="signature">Tom<br>24.08.2026</p>
+
+                        <p class="postscript">written while you where kissing my neck in the end in a silly and lovely way, I will miss you 🥲🥺</p>
+                    </div>
+
+                    <button class="close-btn" onclick="closeMessage()">✕ Close</button>
+                </div>
+
+                <div class="sparkles"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="love-letter.js"></script>
+</body>
+</html>
